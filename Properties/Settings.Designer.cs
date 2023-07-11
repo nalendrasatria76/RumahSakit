@@ -32,5 +32,16 @@ namespace UAS_A22.Properties {
                 return ((string)(this["ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-94VJAKDC\\NALENDRASS;Initial Catalog=DB_RS;User ID=sa;Password=" +
+            "10Desember2002")]
+        public string DB_RSConnectionString {
+            get {
+                return ((string)(this["DB_RSConnectionString"]));
+            }
+        }
     }
 }
