@@ -35,9 +35,9 @@
             this.petugasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dokterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ruanganToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
             this.pembayaranToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rawatInapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,18 +81,35 @@
             this.petugasToolStripMenuItem.Name = "petugasToolStripMenuItem";
             this.petugasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.petugasToolStripMenuItem.Text = "Petugas ";
+            this.petugasToolStripMenuItem.Click += new System.EventHandler(this.PetugasMenuItem_Clic);
             // 
             // dokterToolStripMenuItem
             // 
             this.dokterToolStripMenuItem.Name = "dokterToolStripMenuItem";
             this.dokterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.dokterToolStripMenuItem.Text = "Dokter";
+            this.dokterToolStripMenuItem.Click += new System.EventHandler(this.DokterMenuItem_Clic);
             // 
             // ruanganToolStripMenuItem
             // 
             this.ruanganToolStripMenuItem.Name = "ruanganToolStripMenuItem";
             this.ruanganToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.ruanganToolStripMenuItem.Text = "Ruangan";
+            this.ruanganToolStripMenuItem.Click += new System.EventHandler(this.RuanganMenuItem_Clic);
+            // 
+            // pembayaranToolStripMenuItem
+            // 
+            this.pembayaranToolStripMenuItem.Name = "pembayaranToolStripMenuItem";
+            this.pembayaranToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.pembayaranToolStripMenuItem.Text = "Pembayaran";
+            this.pembayaranToolStripMenuItem.Click += new System.EventHandler(this.PembayaranMenuItem_Clic);
+            // 
+            // rawatInapToolStripMenuItem
+            // 
+            this.rawatInapToolStripMenuItem.Name = "rawatInapToolStripMenuItem";
+            this.rawatInapToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.rawatInapToolStripMenuItem.Text = "Rawat Inap";
+            this.rawatInapToolStripMenuItem.Click += new System.EventHandler(this.RawatMenuItem_Clic);
             // 
             // button1
             // 
@@ -104,18 +121,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // pembayaranToolStripMenuItem
-            // 
-            this.pembayaranToolStripMenuItem.Name = "pembayaranToolStripMenuItem";
-            this.pembayaranToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.pembayaranToolStripMenuItem.Text = "Pembayaran";
-            // 
-            // rawatInapToolStripMenuItem
-            // 
-            this.rawatInapToolStripMenuItem.Name = "rawatInapToolStripMenuItem";
-            this.rawatInapToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.rawatInapToolStripMenuItem.Text = "Rawat Inap";
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -126,6 +131,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.Text = "Rumah Sakit";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);

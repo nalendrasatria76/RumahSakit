@@ -32,9 +32,55 @@ namespace UAS_A22
             this.Hide();
         }
 
+        private void dataPasienToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
         private void pasienToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Form3 fo = new Form3();
+            fo.Show();
+            this.Hide();
+        }
 
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PetugasMenuItem_Clic(object sender, EventArgs e)
+        {
+            Form4 fo = new Form4();
+            fo.Show();
+            this.Hide();
+        }
+
+        private void DokterMenuItem_Clic(object sender, EventArgs e)
+        {
+            Form5 fo = new Form5();
+            fo.Show();
+            this.Hide();
+        }
+
+        private void RuanganMenuItem_Clic(object sender, EventArgs e)
+        {
+            Form6 fo = new Form6();
+            fo.Show();
+            this.Hide();
+        }
+
+        private void PembayaranMenuItem_Clic(object sender, EventArgs e)
+        {
+            Form7 fo = new Form7();
+            fo.Show();
+            this.Hide();
+        }
+
+        private void RawatMenuItem_Clic(object sender, EventArgs e)
+        {
+            Form8 fo = new Form8();
+            fo.Show();
+            this.Hide();
         }
     }
 }
