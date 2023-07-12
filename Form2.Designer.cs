@@ -37,7 +37,13 @@
             this.ruanganToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pembayaranToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rawatInapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataPasienToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataPetugasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataDokterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataRuanganToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataPembayaranToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataRawatInapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +54,7 @@
             this.toolStripDropDownButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(800, 31);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -61,11 +67,17 @@
             this.dokterToolStripMenuItem,
             this.ruanganToolStripMenuItem,
             this.pembayaranToolStripMenuItem,
-            this.rawatInapToolStripMenuItem});
+            this.rawatInapToolStripMenuItem,
+            this.dataPasienToolStripMenuItem,
+            this.dataPetugasToolStripMenuItem,
+            this.dataDokterToolStripMenuItem,
+            this.dataRuanganToolStripMenuItem,
+            this.dataPembayaranToolStripMenuItem,
+            this.dataRawatInapToolStripMenuItem});
             this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(141, 24);
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(141, 28);
             this.toolStripDropDownButton1.Text = "Data Rumah Sakit";
             this.toolStripDropDownButton1.Click += new System.EventHandler(this.toolStripDropDownButton1_Click);
             // 
@@ -111,6 +123,13 @@
             this.rawatInapToolStripMenuItem.Text = "Rawat Inap";
             this.rawatInapToolStripMenuItem.Click += new System.EventHandler(this.RawatMenuItem_Clic);
             // 
+            // dataPasienToolStripMenuItem
+            // 
+            this.dataPasienToolStripMenuItem.Name = "dataPasienToolStripMenuItem";
+            this.dataPasienToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.dataPasienToolStripMenuItem.Text = "Data Pasien";
+            this.dataPasienToolStripMenuItem.Click += new System.EventHandler(this.dataPasienToolStripMenuItem_Click_1);
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(12, 415);
@@ -120,6 +139,41 @@
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // dataPetugasToolStripMenuItem
+            // 
+            this.dataPetugasToolStripMenuItem.Name = "dataPetugasToolStripMenuItem";
+            this.dataPetugasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.dataPetugasToolStripMenuItem.Text = "Data Petugas";
+            this.dataPetugasToolStripMenuItem.Click += new System.EventHandler(this.dataPetugasToolStripMenuItem_Click);
+            // 
+            // dataDokterToolStripMenuItem
+            // 
+            this.dataDokterToolStripMenuItem.Name = "dataDokterToolStripMenuItem";
+            this.dataDokterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.dataDokterToolStripMenuItem.Text = "Data Dokter";
+            this.dataDokterToolStripMenuItem.Click += new System.EventHandler(this.dataDokterToolStripMenuItem_Click);
+            // 
+            // dataRuanganToolStripMenuItem
+            // 
+            this.dataRuanganToolStripMenuItem.Name = "dataRuanganToolStripMenuItem";
+            this.dataRuanganToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.dataRuanganToolStripMenuItem.Text = "Data Ruangan";
+            this.dataRuanganToolStripMenuItem.Click += new System.EventHandler(this.dataRuanganToolStripMenuItem_Click);
+            // 
+            // dataPembayaranToolStripMenuItem
+            // 
+            this.dataPembayaranToolStripMenuItem.Name = "dataPembayaranToolStripMenuItem";
+            this.dataPembayaranToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.dataPembayaranToolStripMenuItem.Text = "Data Pembayaran";
+            this.dataPembayaranToolStripMenuItem.Click += new System.EventHandler(this.dataPembayaranToolStripMenuItem_Click);
+            // 
+            // dataRawatInapToolStripMenuItem
+            // 
+            this.dataRawatInapToolStripMenuItem.Name = "dataRawatInapToolStripMenuItem";
+            this.dataRawatInapToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.dataRawatInapToolStripMenuItem.Text = "Data Rawat Inap";
+            this.dataRawatInapToolStripMenuItem.Click += new System.EventHandler(this.dataRawatInapToolStripMenuItem_Click);
             // 
             // Form2
             // 
@@ -150,5 +204,11 @@
         private System.Windows.Forms.ToolStripMenuItem ruanganToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pembayaranToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rawatInapToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataPasienToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataPetugasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataDokterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataRuanganToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataPembayaranToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataRawatInapToolStripMenuItem;
     }
 }

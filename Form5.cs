@@ -62,15 +62,15 @@ namespace UAS_A22
         private void btnSave_Click(object sender, EventArgs e)
         {
             string nmDokter = nmp.Text;
-            string AlmtDokter = nmp.Text;
+            string AlamatDokter = nmp.Text;
             string idDokter = nmp.Text;
-            string spesialisdokter = nmp.Text;
+            string SpesialisDokter = nmp.Text;
 
             if (nmDokter == "")
             {
                 MessageBox.Show("Masukkan Nama Dokter", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else if (AlmtDokter == "")
+            else if (AlamatDokter == "")
             {
                 MessageBox.Show("Masukkan Alamat Dokter", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -78,20 +78,20 @@ namespace UAS_A22
             {
                 MessageBox.Show("Masukkan Id Dokter", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else if (spesialisdokter == "")
+            else if (SpesialisDokter == "")
             {
-                MessageBox.Show("Masukkan spesialis dokter", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Masukkan Spesialis Dokter", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
                 koneksi.Open();
-                string str = "insert into Tbl_Pasien (id_dokter, nama_dokter, alamat_dokter, spesialisdokter)" + "values(@id_dokter, @nama_dokter, @alamat_dokter, @spesialis_dokter)";
+                string str = "insert into Tbl_Pasien (id_dokter, nama_dokter, Alamat_Dokter, SpesialisSokter)" + "values(@id_dokter, @nama_dokter, @Alamat_Dokter, @Spesialis_Sokter)";
                 SqlCommand cmd = new SqlCommand(str, koneksi);
                 cmd.CommandType = CommandType.Text;
-                cmd.Parameters.Add(new SqlParameter("alamat_Dokter", AlmtDokter));
+                cmd.Parameters.Add(new SqlParameter("Alamat_Dokter", AlamatDokter));
                 cmd.Parameters.Add(new SqlParameter("nama_Dokter", nmDokter));
                 cmd.Parameters.Add(new SqlParameter("id_Dokter", idDokter));
-                cmd.Parameters.Add(new SqlParameter("spesialis_dokter", spesialisdokter));
+                cmd.Parameters.Add(new SqlParameter("Spesialis_dokter", SpesialisDokter));
                 cmd.ExecuteNonQuery();
 
                 koneksi.Close();

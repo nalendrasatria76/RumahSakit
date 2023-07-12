@@ -74,12 +74,12 @@ namespace UAS_A22
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string nmPetugas = nmp.Text;
+            string NmPetugas = nmp.Text;
             string AlmtPetugas = nmp.Text;
-            string idPetugas = nmp.Text;
-            string jamjaga = nmp.Text;
+            string IDPetugas = nmp.Text;
+            string JamJaga = nmp.Text;
 
-            if (nmPetugas == "")
+            if (NmPetugas == "")
             {
                 MessageBox.Show("Masukkan Nama Petugas", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -87,11 +87,11 @@ namespace UAS_A22
             {
                 MessageBox.Show("Masukkan Alamat Petugas", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else if (idPetugas == "")
+            else if (IDPetugas == "")
             {
                 MessageBox.Show("Masukkan Id Petugas", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else if (jamjaga == "")
+            else if (JamJaga == "")
             {
                 MessageBox.Show("Masukkan jamjaga", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -101,10 +101,10 @@ namespace UAS_A22
                 string str = "insert into Tbl_Pasien (id_petugas, nama_petugas, alamat_Petugas, jamjaga)" + "values(@id_petugas, @nama_petugas, @alamat_petugas, @jam_jaga)";
                 SqlCommand cmd = new SqlCommand(str, koneksi);
                 cmd.CommandType = CommandType.Text;
-                cmd.Parameters.Add(new SqlParameter("alamat_Pasien", AlmtPetugas));
-                cmd.Parameters.Add(new SqlParameter("nama_Pasien", nmPetugas));
-                cmd.Parameters.Add(new SqlParameter("id_Pasien", idPetugas));
-                cmd.Parameters.Add(new SqlParameter("tgldatang_Pasien", jamjaga));
+                cmd.Parameters.Add(new SqlParameter("id_petugas", IDPetugas));
+                cmd.Parameters.Add(new SqlParameter("nama_petugas", NmPetugas));
+                cmd.Parameters.Add(new SqlParameter("alamat_petugas", AlmtPetugas));
+                cmd.Parameters.Add(new SqlParameter("jam_jaga", JamJaga));
                 cmd.ExecuteNonQuery();
 
                 koneksi.Close();

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace UAS_A22
 {
-    public partial class Form10 : Form
+    public partial class Form14 : Form
     {
-        public Form10()
+        public Form14()
         {
             InitializeComponent();
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

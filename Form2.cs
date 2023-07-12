@@ -82,5 +82,47 @@ namespace UAS_A22
             fo.Show();
             this.Hide();
         }
+
+        private void dataPasienToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Form9 fo = new Form9();
+            fo.Show();
+            this.Hide();
+        }
+
+        private void dataPetugasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form10 fo = new Form10();
+            fo.Show();
+            this.Hide();
+        }
+
+        private void dataDokterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form11 fo = new Form11();
+            fo.Show();
+            this.Hide();
+        }
+
+        private void dataRuanganToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form12 fo = new Form12();
+            fo.Show();
+            this.Hide();
+        }
+
+        private void dataPembayaranToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form13 fo = new Form13();
+            fo.Show();
+            this.Hide();
+        }
+
+        private void dataRawatInapToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form14 fo = new Form14();
+            fo.Show();
+            this.Hide();
+        }
     }
 }

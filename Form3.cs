@@ -64,8 +64,8 @@ namespace UAS_A22
             string nmPasien = nmp.Text;
             string AlmtPasien = nmp.Text;
             string idPasien = nmp.Text;
-            string tgldatangPasien = nmp.Text;
-            string keluhanPasien = nmp.Text;
+            string tgldatang = nmp.Text;
+            string keluhan = nmp.Text;
 
             if (nmPasien == "")
             {
@@ -79,25 +79,25 @@ namespace UAS_A22
             {
                 MessageBox.Show("Masukkan Id Pasien", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else if (tgldatangPasien == "")
+            else if (tgldatang == "")
             {
-                MessageBox.Show("Masukkan tgldatang Pasien", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Masukkan tgldatang", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else if (keluhanPasien == "")
+            else if (keluhan == "")
             {
-                MessageBox.Show("Masukkan keluhan Pasien", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Masukkan keluhan", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
                 koneksi.Open();
-                string str = "insert into Tbl_Pasien (id_pasien, nama_pasien, alamat_Pasien, tgldatang_pasien, keluhan_pasien)" + "values(@id_pasien, @nama_pasien, @alamat_pasien, @tgldatang_pasien, @keluhan_pasien)";
+                string str = "insert into Tbl_Pasien (id_pasien, nama_pasien, alamat_Pasien, tgl_datang, keluhan)" + "values(@id_pasien, @nama_pasien, @alamat_pasien, @tgl_datang, @keluhan)";
                 SqlCommand cmd = new SqlCommand(str, koneksi);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.Add(new SqlParameter("alamat_Pasien", AlmtPasien));
                 cmd.Parameters.Add(new SqlParameter("nama_Pasien", nmPasien));
                 cmd.Parameters.Add(new SqlParameter("id_Pasien", idPasien));
-                cmd.Parameters.Add(new SqlParameter("tgldatang_Pasien", tgldatangPasien));
-                cmd.Parameters.Add(new SqlParameter("keluhan_Pasien", keluhanPasien));
+                cmd.Parameters.Add(new SqlParameter("tgl_datang", tgldatang));
+                cmd.Parameters.Add(new SqlParameter("keluhan", keluhan));
                 cmd.ExecuteNonQuery();
 
                 koneksi.Close();
