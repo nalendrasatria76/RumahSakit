@@ -124,5 +124,10 @@ namespace UAS_A22
             fo.Show();
             this.Hide();
         }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

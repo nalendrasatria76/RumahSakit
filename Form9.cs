@@ -85,7 +85,7 @@ namespace UAS_A22
         private void FormDataPasien_Load()
         {
             koneksi.Open();
-            SqlDataAdapter dataAdapter1 = new SqlDataAdapter(new SqlCommand("SELECT nama_pasien, alamat, id_pasien, keluhan, tgl_datang FROM Pasien", koneksi));
+            SqlDataAdapter dataAdapter1 = new SqlDataAdapter(new SqlCommand("Select nama_pasien, alamat_pasien, id_pasien, keluhan, tgl_datang", koneksi));
             DataSet ds = new DataSet();
             dataAdapter1.Fill(ds);
 

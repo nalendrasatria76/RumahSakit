@@ -81,11 +81,11 @@ namespace UAS_A22
 
             if (NmPetugas == "")
             {
-                MessageBox.Show("Masukkan Nama Petugas", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Masukkan nama Petugas", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (AlmtPetugas == "")
             {
-                MessageBox.Show("Masukkan Alamat Petugas", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Masukkan alamat Petugas", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (IDPetugas == "")
             {
@@ -93,7 +93,7 @@ namespace UAS_A22
             }
             else if (JamJaga == "")
             {
-                MessageBox.Show("Masukkan jamjaga", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Masukkan jam jaga", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {

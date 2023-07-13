@@ -21,5 +21,12 @@ namespace UAS_A22
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form2 nm = new Form2();
+            nm.Show();
+            this.Hide();
+        }
     }
 }
