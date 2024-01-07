@@ -732,4 +732,6 @@
   agreement with Open Design Alliance. Teigha(R) Copyright(c) 2003-2013 by 
   Open Design Alliance. All rights reserved.
 
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *!
+                                                                          * [image](https://github.com/nalendrasatria76/RumahSakit/assets/115075867/83fe6598-1e3b-4550-b0f0-7b14f2aff39d)
+
